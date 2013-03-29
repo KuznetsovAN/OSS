@@ -84,6 +84,15 @@ namespace lab_1
 
         private void button5_Click(object sender, RoutedEventArgs e)
         {
+            int[] arList = new int[10];
+            myAL.CopyTo(arList);
+            int kol = 0;
+            for (int i = 1; i < arList.Length - 1; i++)
+            {
+                if (arList[i] > arList[i + 1] && arList[i] > arList[i - 1]) kol++;                
+            }
+            listBox1.Items.Add("Колличество: ");
+            listBox1.Items.Add(kol);
         }
 
 
