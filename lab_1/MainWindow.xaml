@@ -11,5 +11,6 @@
         <Button Content="Сохранить" Height="23" HorizontalAlignment="Left" Margin="10,174,0,0" Name="button3" VerticalAlignment="Top" Width="75" Click="button3_Click" />
         <Button Content="Выход" Height="23" HorizontalAlignment="Left" Margin="12,336,0,0" Name="button4" VerticalAlignment="Top" Width="75" />
         <Button Content="Задание1" Height="23" HorizontalAlignment="Left" Margin="12,229,0,0" Name="button5" VerticalAlignment="Top" Width="75" Click="button5_Click" />
+        <Button Content="Задание2" Height="23" HorizontalAlignment="Left" Margin="12,258,0,0" Name="button6" VerticalAlignment="Top" Width="75" Click="button6_Click" />
     </Grid>
 </Window>

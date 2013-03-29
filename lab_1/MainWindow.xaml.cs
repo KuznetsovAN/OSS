@@ -27,7 +27,7 @@ namespace lab_1
         private ArrayList myAL = new ArrayList();
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-           
+            myAL.Clear();
             int index;            
             int itemCount = Convert.ToInt32(textBox2.Text);
             Random rnd1 = new Random();
@@ -93,6 +93,30 @@ namespace lab_1
             }
             listBox1.Items.Add("Колличество: ");
             listBox1.Items.Add(kol);
+        }
+
+        private void button6_Click(object sender, RoutedEventArgs e)
+        {
+            int[] arList = new int[10];
+            myAL.CopyTo(arList);
+            int nomer = -1;
+            for (int i = 0; i < arList.Length ; i++)
+            {
+                if (arList[i] > 25)
+                {
+                    nomer = i;
+                    break;
+                }
+            }
+            if (nomer != -1)
+            {
+                listBox1.Items.Add("Первый элемент больший 25: ");
+                listBox1.Items.Add(nomer);
+            }
+            else
+            {
+                listBox1.Items.Add("Нет такого элемента");
+            }
         }
 
 
